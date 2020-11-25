@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: webmonitroingapp
-        image: adiladnan327/webmonitoringapp
+        image: adiladnan327/webmonitoringapp:lstest
         imagePullPolicy: Always
         resources:
           limits:
