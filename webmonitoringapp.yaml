@@ -1,0 +1,41 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+ name: web-monitor
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webmonitroingapp
+spec:
+  selector:
+    matchLabels:
+      app: webmonitroingapp
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: webmonitroingapp
+    spec:
+      containers:
+      - name: webmonitroingapp
+        image: adiladnan327/webmonitoringapp
+        imagePullPolicy: Always
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
+---
+kind: Service
+apiVersion: v1
+metadata:
+ name: webmonitoringapp-service
+ namespace: web-monitor
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+   app: webmonitroingapp
