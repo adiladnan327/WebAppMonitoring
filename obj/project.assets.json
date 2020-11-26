@@ -88,11 +88,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dockerdemo\\WebApp\\WebApp.csproj",
+      "projectUniqueName": "D:\\dockerdemo\\WebApp1\\WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "D:\\dockerdemo\\WebApp\\WebApp.csproj",
+      "projectPath": "D:\\dockerdemo\\WebApp1\\WebApp.csproj",
       "packagesPath": "C:\\Users\\adila\\.nuget\\packages\\",
-      "outputPath": "D:\\dockerdemo\\WebApp\\obj\\",
+      "outputPath": "D:\\dockerdemo\\WebApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\adila\\AppData\\Roaming\\NuGet\\NuGet.Config"
