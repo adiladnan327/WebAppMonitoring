@@ -21,10 +21,6 @@ spec:
       - name: webmonitroingapp
         image: adiladnan327/webmonitoringapp:latest
         imagePullPolicy: Always
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
         ports:
         - containerPort: 80
 ---
